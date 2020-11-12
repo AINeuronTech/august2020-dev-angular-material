@@ -1,0 +1,46 @@
+//#first_div {
+//  background-color: green;
+//  margin-bottom: 20px;
+//  padding: 40px;
+//  font-size: 60px;
+//  font-family: 'Times New Roman';
+//  color: aqua;
+//}
+
+//#second_div {
+//  background-color: grey;
+//}
+
+h1,h2,h3,h4,h5,h6 {
+  color: red;
+  background-color: black;
+}
+
+ol {
+  font-size: 30px;
+}
+
+p {
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+}
+
+.item-container {
+  margin: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.my-divs {
+  background-color: brown;
+}
+
+.user-info {
+  background-color: darkgrey;
+}
+
+.profile {
+  background-color: darkcyan;
+}
