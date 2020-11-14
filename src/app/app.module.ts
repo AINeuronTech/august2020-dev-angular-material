@@ -8,10 +8,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HtmlCssComponent } from './html-css/html-css.component';
 
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent],
+  declarations: [AppComponent, UserProfileComponent, HtmlCssComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
