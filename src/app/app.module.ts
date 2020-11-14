@@ -11,10 +11,21 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HtmlCssComponent } from './html-css/html-css.component';
 import { LoginComponent } from './login/login.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { HomeComponent } from './home/home.component';
+import { LoginChildComponent } from './login-child/login-child.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, HtmlCssComponent, LoginComponent, CatalogComponent],
+  declarations: [
+    AppComponent,
+    UserProfileComponent,
+    HtmlCssComponent,
+    LoginComponent,
+    CatalogComponent,
+    HomeComponent,
+    LoginChildComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +33,7 @@ import { CatalogComponent } from './catalog/catalog.component';
     MatToolbarModule,
     MatIconModule,
     MatTabsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
