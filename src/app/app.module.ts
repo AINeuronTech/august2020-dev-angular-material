@@ -9,10 +9,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HtmlCssComponent } from './html-css/html-css.component';
+import { LoginComponent } from './login/login.component';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, HtmlCssComponent],
+  declarations: [AppComponent, UserProfileComponent, HtmlCssComponent, LoginComponent, CatalogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
