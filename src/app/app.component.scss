@@ -1,11 +1,18 @@
-.center {
-  margin-top: 50px;
+.mat-toolbar {
+  background:#143055;
   display: flex;
   justify-content: center;
 }
 
-mat-toolbar {
-  background-color: coral;
+a {
+  color: white;
+  margin-left: 24px;
+}
+
+.center {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 

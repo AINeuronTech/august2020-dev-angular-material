@@ -6,11 +6,9 @@ import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, S
   styleUrls: ['./login-child.component.scss'],
 })
 export class LoginChildComponent implements OnInit, OnChanges, OnDestroy {
-  @Input() fromLoginParent;
-  @Input() userNameValue;
-  @Input() myNameValue;
+  @Input() childTitle;
   @Output() sendData = new EventEmitter();
-  yourName = 'abc';
+
   constructor() {}
 
   ngOnInit(): void {
@@ -22,7 +20,7 @@ export class LoginChildComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   sendDataToParent() {
-    this.sendData.emit('Im coming from login-child component');
+    this.sendData.emit('Hello Parent');
   }
 
   ngOnDestroy() {

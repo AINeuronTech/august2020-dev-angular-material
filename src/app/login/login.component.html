@@ -2,19 +2,13 @@
 <p>login component view</p>
 
 <app-login-child
-  [fromLoginParent]="loginParentTitle"
-  [userNameValue]="username"
+  [childTitle]="parentTitle"
   (sendData)="receiveData($event)"
 ></app-login-child>
 
-<div style="font-size: 24px;">
+<div>
   {{msgFromChild}}
 </div>
-
-  <div>
-    Insert your name: <input type="text" [(ngModel)]="yourName">
-  </div>
-  <app-login-child [myNameValue]="yourName"></app-login-child>
 </div>
 
 
