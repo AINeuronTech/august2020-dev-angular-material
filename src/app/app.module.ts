@@ -14,6 +14,13 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { HomeComponent } from './home/home.component';
 import { LoginChildComponent } from './login-child/login-child.component';
 import { FormsModule } from '@angular/forms';
+import { MembersService } from './members.service';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { PriceComponent } from './price/price.component';
+import { TeamMembersComponent } from './team-members/team-members.component';
+import { UsersService } from './users.service';
+import { MemberDetailsComponent } from './member-details/member-details.component';
 
 
 @NgModule({
@@ -25,6 +32,9 @@ import { FormsModule } from '@angular/forms';
     CatalogComponent,
     HomeComponent,
     LoginChildComponent,
+    PriceComponent,
+    TeamMembersComponent,
+    MemberDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,8 +44,10 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatTabsModule,
     FormsModule,
+    HttpClientModule,
+    MatCardModule,
   ],
-  providers: [],
+  providers: [MembersService, UsersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

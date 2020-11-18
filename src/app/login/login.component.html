@@ -1,6 +1,10 @@
 <div class="login-container">
 <p>login component view</p>
 
+<div>
+  <button (click)="onClickFromParent()">Hide text in child</button>
+</div>
+
 <app-login-child
   [childTitle]="parentTitle"
   (sendData)="receiveData($event)"
@@ -9,8 +13,20 @@
 <div>
   {{msgFromChild}}
 </div>
+
+<div>
+  userName: <input #myUsername type="text">
+  password: <input #myPassword type="text">
 </div>
 
+<div #userDetails>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+  when an unknown printer took a galley of type and scrambled it to make a type specimen book
+</div>
+<button (click)="addStyle()">Add style</button>
+
+</div>
 
 
 

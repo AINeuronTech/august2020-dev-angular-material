@@ -6,8 +6,9 @@ import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, S
   styleUrls: ['./login-child.component.scss'],
 })
 export class LoginChildComponent implements OnInit, OnChanges, OnDestroy {
-  @Input() childTitle;
+  @Input() childTitle: string;
   @Output() sendData = new EventEmitter();
+  isVisible = true;
 
   constructor() {}
 
