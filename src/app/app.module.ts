@@ -21,6 +21,13 @@ import { PriceComponent } from './price/price.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
 import { UsersService } from './users.service';
 import { MemberDetailsComponent } from './member-details/member-details.component';
+import { Sample1Directive } from './sample1.directive';
+import { Sample2Directive } from './sample2.directive';
+import { Sample3Directive } from './sample3.directive';
+import { Sample4Pipe } from './sample4.pipe';
+import { TruncatePipe } from './truncate.pipe';
+import { HighlighterDirective } from './highlighter.directive';
+import { CheckAgeDirective } from './check-age.directive';
 
 
 @NgModule({
@@ -35,6 +42,13 @@ import { MemberDetailsComponent } from './member-details/member-details.componen
     PriceComponent,
     TeamMembersComponent,
     MemberDetailsComponent,
+    Sample1Directive,
+    Sample2Directive,
+    Sample3Directive,
+    Sample4Pipe,
+    TruncatePipe,
+    HighlighterDirective,
+    CheckAgeDirective,
   ],
   imports: [
     BrowserModule,

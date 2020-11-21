@@ -10,5 +10,8 @@ export class MemberDetailsComponent implements OnInit {
   @Input() memberDetails: IUser[];
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('from memeber details');
+
+  }
 }

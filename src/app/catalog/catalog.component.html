@@ -1,16 +1,32 @@
-<p #myteam>catalog view</p>
-<!--<button (click)="onClick()">
-  Go team!
-</button>
+<div>
+  <input [(ngModel)]="userName">
+    <h1>{{ userName }}</h1>
+  {{sampleText | lowercase}}
+  <br /><br />
+  {{today | date: 'longTime'}}
+  <br/>
+  Price :{{price | currency:'CAD'}}
 
-<div *ngFor="let user of users">
-<mat-card class="example-card">
-	<mat-card-header>
-		<mat-card-title>{{user.id}}</mat-card-title>
-		<mat-card-subtitle>{{user.name}}</mat-card-subtitle>
-  </mat-card-header>
-  <p>{{user.phone}}</p>
-  <p>{{user.website}}</p>
-</mat-card>
-</div>-->
+  <br/><br/>
+  <div appHighlighter>{{veryLongText | truncate: 350}}</div>
+</div>
+
+<br/>
+<br />
+<div>
+  Only for Teenagers : <input appCheckAge placeholder="13-19">
+</div>
+
+<br/>
+<p>
+{{(showMore) ? text : text | slice:0:300}} <span *ngIf="!showMore">...</span>
+<a href="javascript:;" *ngIf="!showMore" (click)="showMore=true">[Show More]</a>
+</p>
+
+<div [ngClass]="isActive ? 'class1' : 'class2'">
+  Example of angular ngClass
+</div>
+<br/>
+<button (click)="toggleClass()">Toggle class</button>
+
 
